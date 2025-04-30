@@ -1,6 +1,7 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "Home"
+menu_item: "home"
 ---
 
 ## You're ready to go!
