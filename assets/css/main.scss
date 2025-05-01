@@ -15,6 +15,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    .contact-button {
+        margin-left: 40px;
+    }
 }
 
 .logo {
@@ -36,7 +40,7 @@
             font-size: 21px;
             padding: 0 30px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             position: relative;
 
             &:hover,
@@ -72,7 +76,7 @@
             > .blocks {
                 pointer-events: none;
                 position: absolute;
-                top: 38px;
+                top: 30px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -99,7 +103,6 @@
     padding: 10px 40px;
     background: #0086CC;
     border-radius: 3px;
-    margin-left: 40px;
     color: white;
     font-size: 21px;
     font-weight: 600;
@@ -109,5 +112,61 @@
 .well {
     width: 100%;
     background: no-repeat top right url("../well.png") #c6dae3;
-    height: 444px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+
+.wrap {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.intro > ul {
+    list-style-type: square;
+    margin: 24px 0 24px 0;
+    padding: 0 0 0 20px;
+    font-size: 24px;
+
+    > li {
+        padding-left: 15px;
+        line-height: 40px;
+        font-weight: 200;
+
+        &::marker {
+            color: #0086CC;
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -moz-font-feature-settings: 'liga';
+            -moz-osx-font-smoothing: grayscale;
+
+        }
+
+        &.experience-icon::marker {
+            content: "acute";
+        }
+
+        &.handling-icon::marker {
+            content: "waving_hand";
+        }
+
+        &.advice-icon::marker {
+            content: "for_you"
+        }
+
+        &.family-icon::marker {
+            content: "diversity_1"
+        }
+    }
 }
